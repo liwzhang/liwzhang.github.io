@@ -1,10 +1,30 @@
-ul {
+html,
+body,
+head {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family: "Helvetica";
+}
+
+ul.navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 li a {
   display: block;
+  color: darkgrey;
   width: 15%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: pink;
 }
