@@ -6,25 +6,44 @@ head {
   height: 100%;
   width: 100%;
   background-color: white;
-  font-family: "Helvetica";
+  font-family: "Abel";
+  text-align: center;
 }
 
-ul.navigation {
+ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: large;
 }
 
 li a {
   display: block;
   color: darkgrey;
-  width: 15%;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
 }
 
 li a:hover {
   color: pink;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.align {
+  margin: 0 10%;
+}
+
+footer {
+  background-color: #ededed;
+  padding: 10px;
 }
