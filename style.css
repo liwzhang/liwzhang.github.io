@@ -23,7 +23,7 @@ ul.nav {
 
 li a {
   display: block;
-  color: darkgrey;
+  color: #ff8995;
   padding: 20px;
   text-decoration: none;
 }
@@ -33,12 +33,12 @@ li a:hover {
 }
 
 #name a {
-  color: darkgrey;
+  color: #ff8995;
   text-decoration: none;
 }
 
-#name a:hover {
-  color: pink;
+h2 {
+  color: #ff8995;
 }
 
 #navbar {
@@ -46,15 +46,17 @@ li a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 0 10%;
 }
 
 .align {
-  margin: 0 10%;
+  margin: 25px 10%;
 }
 
 footer {
   background-color: #ededed;
   padding: 10px;
+  margin-top: 15px;
 }
 
 .fa {
@@ -81,4 +83,11 @@ footer {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#overlay {
+  z-index: 10;
+  display: block;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.233);
 }
