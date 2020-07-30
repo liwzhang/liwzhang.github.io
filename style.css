@@ -32,6 +32,15 @@ li a:hover {
   color: pink;
 }
 
+#name a {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+#name a:hover {
+  color: pink;
+}
+
 #navbar {
   display: flex;
   flex-direction: row;
@@ -46,4 +55,30 @@ li a:hover {
 footer {
   background-color: #ededed;
   padding: 10px;
+}
+
+.fa {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.fa-linkedin-square {
+  color: #007bb5;
+}
+
+.fa-github {
+  color: #222222;
+}
+
+.fa-envelope-o {
+  color: #dd4b39;
+}
+
+#bg {
+  overflow: hidden;
+  height: 70%;
+  background-image: url("images/site-bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
