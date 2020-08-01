@@ -8,6 +8,7 @@ head {
   background-color: white;
   font-family: "Abel";
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 ul.nav {
@@ -90,6 +91,11 @@ footer {
   display: block;
   height: 100%;
   background: rgba(255, 255, 255, 0.233);
+}
+
+#projects {
+  background-color: #ededed;
+  padding: 15px 0;
 }
 
 .proj {
