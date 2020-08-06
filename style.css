@@ -28,7 +28,7 @@ h4 {
 }
 
 .align {
-  margin: 25px 20%;
+  padding: 25px 20%;
 }
 
 /* Navbar */
@@ -159,6 +159,10 @@ img {
 }
 
 /* Design section */
+#design {
+  background-color: white;
+}
+
 .img-container {
   display: flex;
   flex-direction: row;
@@ -221,6 +225,11 @@ img {
 }
 
 /* Contact section */
+#contact {
+  margin: 0;
+  padding: 20px;
+}
+
 .fa {
   font-size: 30px;
   padding: 10px;
