@@ -1,3 +1,4 @@
+/* General */
 html,
 body,
 head {
@@ -9,6 +10,34 @@ head {
   font-family: "Abel";
   text-align: center;
   scroll-behavior: smooth;
+}
+
+h2 {
+  color: #ff8995;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+
+h4 {
+  color: gray;
+}
+
+.align {
+  margin: 25px 20%;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5% 10%;
 }
 
 ul.nav {
@@ -33,50 +62,12 @@ li a:hover {
   color: #ff8995;
 }
 
-h2 {
-  color: #ff8995;
-}
-
-#navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 5% 10%;
-}
-
+/* Home page */
 #intro {
   position: absolute;
   top: 50%;
   left: 20%;
   margin-right: 20%;
-}
-
-.align {
-  margin: 25px 20%;
-}
-
-footer {
-  background-color: white;
-  padding: 10px;
-  margin-top: 15px;
-}
-
-.fa {
-  font-size: 30px;
-  padding: 10px;
-}
-
-.fa-linkedin-square {
-  color: #007bb5;
-}
-
-.fa-github {
-  color: #222222;
-}
-
-.fa-envelope-o {
-  color: #dd4b39;
 }
 
 #bg {
@@ -97,6 +88,12 @@ footer {
   color: white;
 }
 
+/* About section */
+#about p {
+  margin: 0 15%;
+}
+
+/* Project section */
 #projects {
   background-color: #ededed;
   padding: 15px 0;
@@ -108,9 +105,11 @@ footer {
   background-color: #ededed;
   text-align: left;
   margin: 25px;
+  align-items: center;
 }
 
-.proj-img {
+.proj-img,
+.proj-buttons {
   height: 100%;
   width: 30%;
 }
@@ -132,10 +131,102 @@ img {
 }
 
 .label {
-  color: #dd4b39;
+  color: #1e5079;
   border-color: #dd4b39;
   border-width: 1px;
-  border-style: solid;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 0;
   margin-right: 5px;
+  font-weight: 900;
+}
+
+.proj-buttons a {
+  background-color: #ff8995;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  margin: 15px;
+  text-align: center;
+}
+
+.proj-buttons a:hover {
+  background-color: pink;
+}
+
+/* Design section */
+.img-preview {
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 300px;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.img-preview:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.55);
+  overflow: auto;
+}
+
+.modal-img {
+  display: block;
+  margin: auto;
+  max-width: 85%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#caption {
+  display: block;
+  margin: auto;
+  width: 85%;
+  text-align: center;
+  color: white;
+}
+
+#close {
+  color: white;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Contact section */
+.fa {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.fa-linkedin-square {
+  color: #007bb5;
+}
+
+.fa-github {
+  color: #222222;
+}
+
+.fa-envelope-o {
+  color: #dd4b39;
+}
+
+/* Footer section */
+footer {
+  background-color: white;
+  padding: 10px;
+  margin-top: 15px;
 }
