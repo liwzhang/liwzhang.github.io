@@ -1,2 +1,2 @@
 # Emily Zhang
-This is a website created to host my code projects.
+This is a portfolio website created to display my code projects and design works.
