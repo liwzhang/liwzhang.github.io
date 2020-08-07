@@ -19,4 +19,23 @@ $(function () {
   $("#close").click(function () {
     modal.css("display", "none");
   });
+
+  /* Scroll to top */
+
+  $(window).scroll(function () {
+    var up = $(".fa-chevron-circle-up");
+    if ($(document).scrollTop() > 200) {
+      up.removeClass("popdown").addClass("popup");
+      up.show();
+    } else {
+      up.removeClass("popup").addClass("popdown");
+      if ($(document).scrollTop() < 180) {
+        up.hide();
+      }
+    }
+  });
+
+  $(".fa-chevron-circle-up").click(function () {
+    $(document).scrollTop(0);
+  });
 });

@@ -12,6 +12,10 @@ head {
   scroll-behavior: smooth;
 }
 
+h1 {
+  text-align: left;
+}
+
 h2 {
   color: #ff8995;
   margin-top: 25px;
@@ -31,7 +35,45 @@ h4 {
   padding: 25px 20%;
 }
 
-/* Navbar */
+.fa-chevron-circle-up {
+  display: none;
+  color: #ff8995;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.popup {
+  animation-name: popup;
+  animation-duration: 0.5s;
+}
+
+@keyframes popup {
+  0% {
+    bottom: -20px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+.popdown {
+  animation-name: popdown;
+  animation-duration: 0.5s;
+}
+
+@keyframes popdown {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: -50px;
+  }
+}
+
+/* Navigation */
 #navbar {
   display: flex;
   flex-direction: row;
@@ -60,6 +102,15 @@ li a {
 
 li a:hover {
   color: #ff8995;
+}
+
+#hamburger {
+  display: none;
+  color: pink;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 35px 25px;
 }
 
 /* Home page */
@@ -149,7 +200,7 @@ img {
 }
 
 .proj-buttons a {
-  background-color: #ff8995;
+  background-color: #92b675;
   color: white;
   padding: 15px;
   text-decoration: none;
@@ -177,7 +228,7 @@ img {
 
 .img-preview {
   border-radius: 5px;
-  max-width: 250px;
+  width: 250px;
   transition: 0.3s;
   padding: 10px;
 }
@@ -190,7 +241,7 @@ img {
 #modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -234,7 +285,7 @@ img {
   padding: 20px;
 }
 
-.fa {
+#contact.fa {
   font-size: 30px;
   padding: 10px;
 }
@@ -256,4 +307,62 @@ footer {
   background-color: white;
   padding: 10px;
   margin-top: 15px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+  /* General */
+  .align {
+    padding: 10px;
+  }
+
+  .fa-chevron-circle-up {
+    right: 20px;
+  }
+
+  /* Navigation */
+  #nav-items {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  /* Home page */
+  #intro {
+    left: 10%;
+  }
+
+  .proj {
+    flex-direction: column;
+  }
+
+  .proj-img,
+  .proj-buttons {
+    width: 90%;
+  }
+
+  .proj-desc {
+    padding: 20px 20px;
+  }
+
+  .proj-buttons a {
+    margin: 0 0 10px 0;
+  }
+
+  /* Design */
+  .img-preview {
+    padding: 10px 0;
+    width: 300px;
+  }
+
+  #caption {
+    margin: 15% 5% 5% 5%;
+  }
+
+  .modal-img {
+    max-width: 100%;
+  }
 }
