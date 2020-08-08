@@ -38,4 +38,26 @@ $(function () {
   $(".fa-chevron-circle-up").click(function () {
     $(document).scrollTop(0);
   });
+
+  /* Mobile nav */
+
+  $("#hamburger").click(function () {
+    $(this).hide();
+    $("#nav-items").show();
+    $("#navbar").css({
+      "flex-direction": "column",
+      "background-color": "black",
+    });
+    $("#nav-close").show().css({ padding: "20px 25px" });
+  });
+
+  $("#nav-close").click(function () {
+    $(this).hide();
+    $("#hamburger").show();
+    $("#nav-items").hide();
+    $("#navbar").css({
+      "flex-direction": "row",
+      "background-color": "transparent",
+    });
+  });
 });

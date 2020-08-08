@@ -104,13 +104,20 @@ li a:hover {
   color: #ff8995;
 }
 
-#hamburger {
+#hamburger,
+#nav-close {
   display: none;
   color: pink;
   position: absolute;
   right: 0;
   top: 0;
   padding: 35px 25px;
+}
+
+#nav-close {
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
 }
 
 /* Home page */
