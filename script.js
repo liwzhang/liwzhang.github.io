@@ -41,23 +41,14 @@ $(function () {
 
   /* Mobile nav */
 
-  $("#hamburger").click(function () {
-    $(this).hide();
-    $("#nav-items").show();
-    $("#navbar").css({
-      "flex-direction": "column",
-      "background-color": "black",
-    });
-    $("#nav-close").show().css({ padding: "20px 25px" });
+  $(".hamburger").click(function () {
+    $("#nav-items").addClass("responsive");
+    $(this).removeClass("active");
+    $(".nav-close").addClass("active");
   });
-
-  $("#nav-close").click(function () {
-    $(this).hide();
-    $("#hamburger").show();
-    $("#nav-items").hide();
-    $("#navbar").css({
-      "flex-direction": "row",
-      "background-color": "transparent",
-    });
+  $(".nav-close").click(function () {
+    $("#nav-items").removeClass("responsive");
+    $(this).removeClass("active");
+    $(".hamburger").addClass("active");
   });
 });
