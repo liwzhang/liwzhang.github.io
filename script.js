@@ -3,6 +3,7 @@ $(function () {
 
   $(window).on("load", function () {
     // wait until all images load before calling magicgrid
+    $(".img-container").show();
     let magicGrid = new MagicGrid({
       container: ".img-container",
       static: true,
@@ -11,7 +12,6 @@ $(function () {
       maxColumns: 3,
       gutter: 10,
     });
-
     magicGrid.listen();
   });
 
