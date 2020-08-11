@@ -1,6 +1,8 @@
 $(function () {
   // MagicGrid
+
   $(window).on("load", function () {
+    // wait until all images load before calling magicgrid
     let magicGrid = new MagicGrid({
       container: ".img-container",
       static: true,
