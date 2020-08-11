@@ -1,3 +1,16 @@
+// MagicGrid
+let magicGrid = new MagicGrid({
+  container: ".img-container",
+  static: true,
+  animate: true,
+  useMin: true,
+  maxColumns: 3,
+  gutter: 10,
+});
+
+magicGrid.listen();
+
+// jQuery stuff
 $(function () {
   /* Modal */
 
