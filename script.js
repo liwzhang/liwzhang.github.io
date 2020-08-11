@@ -1,18 +1,17 @@
-// MagicGrid
-let magicGrid = new MagicGrid({
-  container: ".img-container",
-  static: true,
-  animate: true,
-  useMin: true,
-  maxColumns: 3,
-  gutter: 10,
-});
-
-magicGrid.listen();
-
-// jQuery stuff
 $(function () {
-  /* Modal */
+  // MagicGrid
+  let magicGrid = new MagicGrid({
+    container: ".img-container",
+    static: true,
+    animate: true,
+    useMin: true,
+    maxColumns: 3,
+    gutter: 10,
+  });
+
+  magicGrid.listen();
+
+  // Modal
 
   var modal = $("#modal");
   var imgModal = $("#img-full");
@@ -33,7 +32,7 @@ $(function () {
     modal.css("display", "none");
   });
 
-  /* Scroll to top */
+  // Scroll to top
 
   $(window).scroll(function () {
     var up = $(".fa-chevron-circle-up");
@@ -52,7 +51,7 @@ $(function () {
     $(document).scrollTop(0);
   });
 
-  /* Mobile nav */
+  // Mobile nav
 
   $(".hamburger").click(function () {
     $("#nav-items").addClass("responsive");
