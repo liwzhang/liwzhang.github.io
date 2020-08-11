@@ -31,10 +31,6 @@ h4 {
   color: gray;
 }
 
-.align {
-  padding: 25px 20%;
-}
-
 .fa-chevron-circle-up {
   display: none;
   color: #ff8995;
@@ -144,8 +140,11 @@ li a:hover {
 }
 
 /* About section */
+#about {
+  padding: 15px;
+}
 #about p {
-  margin: 0 15%;
+  margin: 0 20% 25px 20%;
 }
 
 #about p a {
@@ -169,7 +168,7 @@ li a:hover {
 }
 
 #proj-container {
-  padding: 0 15px;
+  padding: 0 15px 15px 15px;
   margin: auto;
   max-width: 850px;
 }
@@ -227,6 +226,7 @@ img {
 /* Design section */
 #design {
   background-color: white;
+  padding: 15px 0 15px 0;
 }
 
 .img-container {
@@ -309,11 +309,15 @@ img {
   color: #dd4b39;
 }
 
+.fa-file-text-o {
+  color: black;
+}
+
 /* Footer section */
 footer {
   background-color: white;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 /* Mobile */
