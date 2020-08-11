@@ -1,15 +1,17 @@
 $(function () {
   // MagicGrid
-  let magicGrid = new MagicGrid({
-    container: ".img-container",
-    static: true,
-    animate: true,
-    useMin: true,
-    maxColumns: 3,
-    gutter: 10,
-  });
+  $(window).on("load", function () {
+    let magicGrid = new MagicGrid({
+      container: ".img-container",
+      static: true,
+      animate: true,
+      useMin: true,
+      maxColumns: 3,
+      gutter: 10,
+    });
 
-  magicGrid.listen();
+    magicGrid.listen();
+  });
 
   // Modal
 
