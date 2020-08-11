@@ -232,6 +232,7 @@ img {
 
 .img-container {
   display: flex;
+  flex-direction: column;
 }
 
 .img-preview {
