@@ -1,364 +1,343 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js",
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-5PZ5WVW");
-        </script>
-        <!-- End Google Tag Manager -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:url" content="https://liwzhang.github.io/" />
-        <meta property="og:title" content="Emily Zhang" />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:description"
-            content="A portfolio website designed to showcase projects and other works. Built with HTML/CSS and JavaScript."
-        />
-        <meta
-            property="og:image"
-            content="https://liwzhang.github.io/images/site-bg.png"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1502" />
-        <meta property="og:image:height" content="1000" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Abel"
-            rel="stylesheet"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/magic-grid/dist/magic-grid.cjs.js"></script>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5PZ5WVW");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://liwzhang.github.io/" />
+    <meta property="og:title" content="Emily Zhang" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A portfolio website designed to showcase projects and other works. Built with HTML/CSS and JavaScript."
+    />
+    <meta
+      property="og:image"
+      content="https://liwzhang.github.io/images/site-bg.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1502" />
+    <meta property="og:image:height" content="1000" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.cjs.js"></script>
 
-        <title>Emily Zhang</title>
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-5PZ5WVW"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div id="bg">
-            <div id="overlay">
-                <ul id="nav-items" class="nav">
-                    <li><a href="/" class="nav">HOME</a></li>
-                    <li><a href="#about" class="nav">ABOUT</a></li>
-                    <li><a href="#projects" class="nav">PROJECTS</a></li>
-                    <li><a href="#design" class="nav">DESIGN</a></li>
-                    <li><a href="#contact" class="nav">CONTACT</a></li>
-                </ul>
-                <a href="javascript:void(0);" class="hamburger active">
-                    <i class="fa fa-bars fa-2x"></i>
-                </a>
-                <span class="nav-close">&times;</span>
+    <title>Emily Zhang</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5PZ5WVW"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="bg">
+      <div id="overlay">
+        <ul id="nav-items" class="nav">
+          <li><a href="/" class="nav">HOME</a></li>
+          <li><a href="#about" class="nav">ABOUT</a></li>
+          <li><a href="#projects" class="nav">PROJECTS</a></li>
+          <li><a href="#design" class="nav">DESIGN</a></li>
+          <li><a href="#contact" class="nav">CONTACT</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="hamburger active">
+          <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <span class="nav-close">&times;</span>
 
-                <div id="intro">
-                    <h1>
-                        Hello! My name is Emily Zhang and I'm a web developer.
-                    </h1>
-                </div>
-            </div>
+        <div id="intro">
+          <h1>Hello! My name is Emily Zhang and I'm a web developer.</h1>
         </div>
+      </div>
+    </div>
 
-        <i class="fa fa-chevron-circle-up fa-3x"></i>
+    <i class="fa fa-chevron-circle-up fa-3x"></i>
 
-        <div id="about">
-            <h2>About</h2>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        I'm a recent grad from Santa Clara University, where I studied Web
+        Design and Engineering. I enjoy learning new technologies and I'm
+        excited for my next opportunity! Below are some of the projects I've
+        worked on. Interested in hearing more?
+        <a href="#contact">Let's chat!</a>
+      </p>
+    </div>
+
+    <div id="projects">
+      <h2>Projects</h2>
+      <div id="proj-container">
+        <div id="proj1" class="proj">
+          <div class="proj-img">
+            <img id="omwana" src="images/omwanathrive_icon.png" />
+          </div>
+          <div class="proj-desc">
+            <h3>OmwanaThrive: A Neonatal Survival App</h3>
+            <h4>Mobile Application</h4>
             <p>
-                I'm a recent grad from Santa Clara University, where I studied
-                Web Design and Engineering. I enjoy learning new technologies
-                and I'm excited for my next opportunity! Below are some of the
-                projects I've worked on. Interested in hearing more?
-                <a href="#contact">Let's chat!</a>
+              A mobile application to address the high infant mortality rate in
+              rural Uganda. The app provides basic newborn care information in
+              the form of story modules, a list of local resources, and
+              recommended reminder messages to be sent to new mothers.
             </p>
+            <span class="label">react native</span>
+            <span class="label">javascript</span>
+            <span class="label">twilio</span>
+            <span class="label">sendgrid</span>
+          </div>
+          <div class="proj-buttons">
+            <a href="https://github.com/sdeweese/NeonatalApp" target="_blank"
+              >Git Code</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=B4YhidTUDnM"
+              target="_blank"
+              >Video Demo</a
+            >
+          </div>
+        </div>
+        <hr />
+        <div id="proj2" class="proj">
+          <div class="proj-img">
+            <img id="soe" src="images/soe.png" />
+          </div>
+          <div class="proj-desc">
+            <h3>Engineering Lab Evaluation System</h3>
+            <h4>Web Application</h4>
+            <p>
+              An evaluation system designed for the School of Engineering lab
+              sections. Students can give anonymous feedback via a link sent to
+              their school email addresses.
+              <b>*Please ask me for demo login information.*</b>
+            </p>
+            <span class="label">ruby on rails</span>
+            <span class="label">ruby</span>
+            <span class="label">sendgrid</span>
+            <span class="label">heroku</span>
+          </div>
+          <div class="proj-buttons">
+            <a
+              href="https://github.com/liwzhang/SoE-Lab-Evaluation-System"
+              target="_blank"
+              >Git Code</a
+            >
+            <a
+              href="https://scu-evaluation-system.herokuapp.com/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+        <hr />
+        <div id="proj3" class="proj">
+          <div class="proj-img">
+            <img id="dr" src="images/dr_recycle_logo.png" />
+          </div>
+          <div class="proj-desc">
+            <h3>Dr Recycle</h3>
+            <h4>Facebook Messenger Bot</h4>
+            <p>
+              A Facebook Messenger bot that users can chat with to receive
+              recycling information. The bot uses an image processing API, and
+              recognizes simple text and images.
+            </p>
+            <span class="label">python</span>
+            <span class="label">clarifai</span>
+            <span class="label">wit.ai</span>
+          </div>
+          <div class="proj-buttons">
+            <a href="https://devpost.com/software/dr-recycle" target="_blank"
+              >DevPost</a
+            >
+            <a href="https://www.facebook.com/drrecycleX/" target="_blank"
+              >FB Page (inactive)</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="design">
+      <h2>Design</h2>
+      <div class="img-container">
+        <div>
+          <img
+            id="sw1"
+            class="img-preview"
+            src="images/2018-11-4-Seminar.png"
+            alt="Website banner promoting a college planning seminar."
+          />
         </div>
 
-        <div id="projects">
-            <h2>Projects</h2>
-            <div id="proj-container">
-                <div id="proj1" class="proj">
-                    <div class="proj-img">
-                        <img id="omwana" src="images/omwanathrive_icon.png" />
-                    </div>
-                    <div class="proj-desc">
-                        <h3>OmwanaThrive: A Neonatal Survival App</h3>
-                        <h4>Mobile Application</h4>
-                        <p>
-                            A mobile application to address the high infant
-                            mortality rate in rural Uganda. The app provides
-                            basic newborn care information in the form of story
-                            modules, a list of local resources, and recommended
-                            reminder messages to be sent to new mothers.
-                        </p>
-                        <span class="label">react native</span>
-                        <span class="label">javascript</span>
-                        <span class="label">twilio</span>
-                        <span class="label">sendgrid</span>
-                    </div>
-                    <div class="proj-buttons">
-                        <a
-                            href="https://github.com/sdeweese/NeonatalApp"
-                            target="_blank"
-                            >Git Code</a
-                        >
-                        <a
-                            href="https://www.youtube.com/watch?v=B4YhidTUDnM"
-                            target="_blank"
-                            >Video Demo</a
-                        >
-                    </div>
-                </div>
-                <hr />
-                <div id="proj2" class="proj">
-                    <div class="proj-img">
-                        <img id="soe" src="images/soe.png" />
-                    </div>
-                    <div class="proj-desc">
-                        <h3>Engineering Lab Evaluation System</h3>
-                        <h4>Web Application</h4>
-                        <p>
-                            An evaluation system designed for the School of
-                            Engineering lab sections. Students can give
-                            anonymous feedback via a link sent to their school
-                            email addresses.
-                            <b>*Please ask me for demo login information.*</b>
-                        </p>
-                        <span class="label">ruby on rails</span>
-                        <span class="label">ruby</span>
-                        <span class="label">sendgrid</span>
-                        <span class="label">heroku</span>
-                    </div>
-                    <div class="proj-buttons">
-                        <a
-                            href="https://github.com/liwzhang/SoE-Lab-Evaluation-System"
-                            target="_blank"
-                            >Git Code</a
-                        >
-                        <a
-                            href="https://scu-evaluation-system.herokuapp.com/"
-                            target="_blank"
-                            >Live Demo</a
-                        >
-                    </div>
-                </div>
-                <hr />
-                <div id="proj3" class="proj">
-                    <div class="proj-img">
-                        <img id="dr" src="images/dr_recycle_logo.png" />
-                    </div>
-                    <div class="proj-desc">
-                        <h3>Dr Recycle</h3>
-                        <h4>Facebook Messenger Bot</h4>
-                        <p>
-                            A Facebook Messenger bot that users can chat with to
-                            receive recycling information. The bot uses an image
-                            processing API, and recognizes simple text and
-                            images.
-                        </p>
-                        <span class="label">python</span>
-                        <span class="label">clarifai</span>
-                        <span class="label">wit.ai</span>
-                    </div>
-                    <div class="proj-buttons">
-                        <a
-                            href="https://devpost.com/software/dr-recycle"
-                            target="_blank"
-                            >DevPost</a
-                        >
-                        <a
-                            href="https://www.facebook.com/drrecycleX/"
-                            target="_blank"
-                            >FB Page (inactive)</a
-                        >
-                    </div>
-                </div>
-            </div>
+        <div>
+          <img
+            id="gamba"
+            class="img-preview"
+            src="images/Assignment03_Emily-Zhang_Final-File.png"
+            alt="Logo concept for the rebranding of a local karaoke business."
+          />
+        </div>
+        <div>
+          <img
+            id="gamba-stationary"
+            class="img-preview"
+            src="images/Assignment04_Emily-Zhang_Final-File.png"
+            alt="Stationary designed for the rebranding of a local karaoke business."
+          />
+        </div>
+        <div>
+          <img
+            id="sw2"
+            class="img-preview"
+            src="images/aug-fall-2017-school.jpg"
+            alt="Website banner promoting fall semester classes."
+          />
         </div>
 
-        <div id="design">
-            <h2>Design</h2>
-            <div class="img-container">
-                <div>
-                    <img
-                        id="sw1"
-                        class="img-preview"
-                        src="images/2018-11-4-Seminar.png"
-                        alt="Website banner promoting a college planning seminar."
-                    />
-                </div>
-
-                <div>
-                    <img
-                        id="gamba"
-                        class="img-preview"
-                        src="images/Assignment03_Emily-Zhang_Final-File.png"
-                        alt="Logo concept for the rebranding of a local karaoke business."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="gamba-stationary"
-                        class="img-preview"
-                        src="images/Assignment04_Emily-Zhang_Final-File.png"
-                        alt="Stationary designed for the rebranding of a local karaoke business."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="sw2"
-                        class="img-preview"
-                        src="images/aug-fall-2017-school.jpg"
-                        alt="Website banner promoting fall semester classes."
-                    />
-                </div>
-
-                <div>
-                    <img
-                        id="forge"
-                        class="img-preview"
-                        src="images/Project02_Emily-Zhang_Final.jpg"
-                        alt="A single page website designed for the SCU Forge Garden."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="cozy"
-                        class="img-preview"
-                        src="images/Assignment01_Emily-Zhang_Final-File.png"
-                        alt="Branding logo concept for a cafe."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="cozy-mockup"
-                        class="img-preview"
-                        src="images/Assignment02_Emily-Zhang_Final.png"
-                        alt="Branding product mockups for a cafe."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="rails-login"
-                        class="img-preview"
-                        src="images/Rails_App_Login.png"
-                        alt="Conceptual design for the Engineering Lab Evaluation System web app - login view."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="rails-question"
-                        class="img-preview"
-                        src="images/Rails_App_Questions.png"
-                        alt="Conceptual design for the Engineering Lab Evaluation System web app - admin questions view."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="tte"
-                        class="img-preview"
-                        src="images/Taste_the_Waste_UI.jpg"
-                        alt="UI wireframe designed for the Taste the Waste mobile app."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="ot-wireframe"
-                        class="img-preview"
-                        src="images/omwanathrive-wireframe.png"
-                        alt="Conceptual UI wireframe for the messaging portal of the OmwanaThrive mobile app."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="sw3"
-                        class="img-preview"
-                        src="images/20181019_SW_Saratoga_Falcon-01.png"
-                        alt="Black & white advertisement designed for a high school publication."
-                    />
-                </div>
-
-                <div>
-                    <img
-                        id="sw4"
-                        class="img-preview"
-                        src="images/SW_MV_12192018-01.jpg"
-                        alt="Colored advertisement designed for a high school publication."
-                    />
-                </div>
-
-                <div>
-                    <img
-                        id="npr2"
-                        class="img-preview"
-                        src="images/Project1_Emily-Zhang_Final-2.jpg"
-                        alt="A redesign of the NPR website - the Shows & Podcasts page."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="npr1"
-                        class="img-preview"
-                        src="images/Project1_Emily-Zhang_Final-1.jpg"
-                        alt="A redesign of the NPR website - the home page."
-                    />
-                </div>
-                <div>
-                    <img
-                        id="npr3"
-                        class="img-preview"
-                        src="images/Project1_Emily-Zhang_Final-3.jpg"
-                        alt="A redesign of the NPR website - the NPR Music page. "
-                    />
-                </div>
-            </div>
-
-            <div id="modal">
-                <span id="close">&times;</span>
-                <div id="caption"></div>
-                <img class="modal-img" id="img-full" />
-            </div>
+        <div>
+          <img
+            id="forge"
+            class="img-preview"
+            src="images/Project02_Emily-Zhang_Final.jpg"
+            alt="A single page website designed for the SCU Forge Garden."
+          />
         </div>
-
-        <div id="contact">
-            <h2>Contact</h2>
-            <p>Need my resume or social media? Find it here!</p>
-            <a href="/images/Resume.pdf" target="_blank"
-                ><i class="fa fa-file-text-o" aria-hidden="true"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/liwzhang/" target="_blank"
-                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-            ></a>
-            <a href="https://github.com/liwzhang" target="_blank"
-                ><i class="fa fa-github" aria-hidden="true"></i
-            ></a>
-            <a href="mailto:zhang11liwen@gmail.com"
-                ><i class="fa fa-envelope-o" aria-hidden="true"></i
-            ></a>
+        <div>
+          <img
+            id="cozy"
+            class="img-preview"
+            src="images/Assignment01_Emily-Zhang_Final-File.png"
+            alt="Branding logo concept for a cafe."
+          />
         </div>
-        <footer>
-            <p>© 2020 Emily Zhang</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        <div>
+          <img
+            id="cozy-mockup"
+            class="img-preview"
+            src="images/Assignment02_Emily-Zhang_Final.png"
+            alt="Branding product mockups for a cafe."
+          />
+        </div>
+        <div>
+          <img
+            id="rails-login"
+            class="img-preview"
+            src="images/Rails_App_Login.png"
+            alt="Conceptual design for the Engineering Lab Evaluation System web app - login view."
+          />
+        </div>
+        <div>
+          <img
+            id="rails-question"
+            class="img-preview"
+            src="images/Rails_App_Questions.png"
+            alt="Conceptual design for the Engineering Lab Evaluation System web app - admin questions view."
+          />
+        </div>
+        <div>
+          <img
+            id="tte"
+            class="img-preview"
+            src="images/Taste_the_Waste_UI.jpg"
+            alt="UI wireframe designed for the Taste the Waste mobile app."
+          />
+        </div>
+        <div>
+          <img
+            id="ot-wireframe"
+            class="img-preview"
+            src="images/omwanathrive-wireframe.png"
+            alt="Conceptual UI wireframe for the messaging portal of the OmwanaThrive mobile app."
+          />
+        </div>
+        <div>
+          <img
+            id="npr2"
+            class="img-preview"
+            src="images/Project1_Emily-Zhang_Final-2.jpg"
+            alt="A redesign of the NPR website - the Shows & Podcasts page."
+          />
+        </div>
+        <div>
+          <img
+            id="npr1"
+            class="img-preview"
+            src="images/Project1_Emily-Zhang_Final-1.jpg"
+            alt="A redesign of the NPR website - the home page."
+          />
+        </div>
+        <div>
+          <img
+            id="sw3"
+            class="img-preview"
+            src="images/20181019_SW_Saratoga_Falcon-01.png"
+            alt="Black & white advertisement designed for a high school publication."
+          />
+        </div>
+        <div>
+          <img
+            id="sw4"
+            class="img-preview"
+            src="images/SW_MV_12192018-01.jpg"
+            alt="Colored advertisement designed for a high school publication."
+          />
+        </div>
+      </div>
+
+      <div id="modal">
+        <span id="close">&times;</span>
+        <div id="caption"></div>
+        <img class="modal-img" id="img-full" />
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2>Contact</h2>
+      <p>Need my resume or social media? Find it here!</p>
+      <a href="/images/Resume.pdf" target="_blank"
+        ><i class="fa fa-file-text-o" aria-hidden="true"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/liwzhang/" target="_blank"
+        ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+      ></a>
+      <a href="https://github.com/liwzhang" target="_blank"
+        ><i class="fa fa-github" aria-hidden="true"></i
+      ></a>
+      <a href="mailto:zhang11liwen@gmail.com"
+        ><i class="fa fa-envelope-o" aria-hidden="true"></i
+      ></a>
+    </div>
+    <footer>
+      <p>© 2020 Emily Zhang</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
