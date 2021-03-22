@@ -1,19 +1,19 @@
 $(function () {
   // MagicGrid
 
-  $(window).on("load", function () {
-    // wait until all images load before calling magicgrid
-    $(".img-container").show();
-    let magicGrid = new MagicGrid({
-      container: ".img-container",
-      static: true,
-      animate: true,
-      useMin: true,
-      maxColumns: 3,
-      gutter: 10,
-    });
-    magicGrid.listen();
-  });
+  // $(window).on("load", function () {
+  //   // wait until all images load before calling magicgrid
+  //   $(".img-container").show();
+  //   let magicGrid = new MagicGrid({
+  //     container: ".img-container",
+  //     static: true,
+  //     animate: true,
+  //     useMin: true,
+  //     maxColumns: 3,
+  //     gutter: 10,
+  //   });
+  //   magicGrid.listen();
+  // });
 
   // Modal
 

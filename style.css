@@ -10,6 +10,7 @@ head {
   font-family: "Abel";
   text-align: center;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -225,20 +226,12 @@ img {
 }
 
 /* Design section */
-#design {
-  background-color: white;
-  padding: 15px 0 15px 0;
-}
-
 .img-container {
   display: none;
 }
 
 .img-preview {
-  border-radius: 5px;
-  width: 250px;
   transition: 0.3s;
-  padding: 10px;
 }
 
 .img-preview:hover {
@@ -287,6 +280,34 @@ img {
   cursor: pointer;
 }
 
+#design {
+  background-color: white;
+  margin: auto;
+  padding: 15px 0 15px 0;
+  max-width: 900px;
+}
+
+.masonry-layout {
+  display: block;
+  margin: auto;
+  column-count: 3;
+  column-gap: 1.4em;
+}
+
+.masonry-layout .brick {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1.4em;
+}
+
+.brick img {
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
 /* Contact section */
 #contact {
   margin: 0;
@@ -321,9 +342,19 @@ footer {
   margin-top: 5px;
 }
 
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* Design */
+  #design {
+    max-width: 550px;
+  }
+  .masonry-layout {
+    column-count: 2;
+  }
+}
+
 /* Mobile */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   /* General */
   .align {
     padding: 10px;
@@ -375,9 +406,12 @@ footer {
   }
 
   /* Design */
+  .masonry-layout {
+    column-count: 1;
+  }
+
   .img-preview {
     padding: 10px 0;
-    width: 300px;
   }
 
   #caption {
