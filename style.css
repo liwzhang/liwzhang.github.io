@@ -251,12 +251,21 @@ img {
   overflow: auto;
 }
 
+#closeModal {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(5, 5, 5, 0.1);
+  position: absolute;
+}
+
 .modal-img {
   display: block;
   margin: auto;
   max-width: 85%;
   max-height: 90%;
   padding: 20px 0;
+  z-index: 4;
 }
 
 #caption {
@@ -267,6 +276,7 @@ img {
   text-align: center;
   color: white;
   font-size: larger;
+  z-index: 4;
 }
 
 #close {
@@ -278,6 +288,7 @@ img {
   font-size: 40px;
   transition: 0.3s;
   cursor: pointer;
+  z-index: 4;
 }
 
 #design {

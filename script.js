@@ -23,6 +23,9 @@ $(function () {
   $(".img-preview").click(function () {
     var img = $(this);
     modal.css("display", "block");
+    if (modal.scrollTop != 0) {
+      modal.scrollTop(0);
+    }
     if (img.width() > img.height()) {
       imgModal.css({ "max-height": "90%", "max-width": "85%" });
     } else {
@@ -32,7 +35,7 @@ $(function () {
     $("#caption").html(img.attr("alt"));
   });
 
-  $("#close").click(function () {
+  modal.click(function () {
     modal.css("display", "none");
   });
 
