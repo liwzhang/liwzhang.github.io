@@ -126,7 +126,7 @@ li a:hover {
 #bg {
   overflow: hidden;
   height: 100%;
-  background-image: url("images/site-bg.png");
+  background-image: url("images/site-bg.webp");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,6 +154,31 @@ li a:hover {
   color: #ff8995;
 }
 
+/* Experience section */
+#experience {
+  background-color: #222222;
+  padding: 15px 0;
+}
+
+.content {
+  color: white;
+}
+
+.content-label {
+  color: #96afbb;
+  padding: 5px 10px 5px 0;
+  margin-right: 5px;
+}
+
+.content h4 {
+  color: rgb(167, 167, 167);
+}
+
+.desc-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Project section */
 #projects {
   background-color: #ededed;
@@ -163,13 +188,12 @@ li a:hover {
 .proj {
   display: flex;
   flex-direction: row;
-  background-color: #ededed;
   text-align: left;
   margin: 25px;
   align-items: center;
 }
 
-#proj-container {
+.proj-container {
   padding: 0 15px 15px 15px;
   margin: auto;
   max-width: 850px;
@@ -206,9 +230,7 @@ li a:hover {
   opacity: 75%;
 }
 
-#omwana,
-#dr,
-#soe {
+.icon {
   width: 100%;
 }
 
@@ -218,105 +240,8 @@ img {
 
 .label {
   color: #1e5079;
-  border-color: #dd4b39;
-  border-width: 1px;
   padding: 5px 10px 5px 0;
   margin-right: 5px;
-  font-weight: 900;
-}
-
-/* Design section */
-.img-container {
-  display: none;
-}
-
-.img-preview {
-  transition: 0.3s;
-}
-
-.img-preview:hover {
-  opacity: 70%;
-  cursor: pointer;
-}
-
-#modal {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
-  overflow: auto;
-}
-
-#closeModal {
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  background-color: rgba(5, 5, 5, 0.1);
-  position: absolute;
-}
-
-.modal-img {
-  display: block;
-  margin: auto;
-  max-width: 85%;
-  max-height: 90%;
-  padding: 20px 0;
-  z-index: 4;
-}
-
-#caption {
-  padding-top: 5%;
-  display: block;
-  margin: auto;
-  width: 85%;
-  text-align: center;
-  color: white;
-  font-size: larger;
-  z-index: 4;
-}
-
-#close {
-  color: white;
-  position: fixed;
-  right: 25px;
-  top: 15px;
-  font-weight: bold;
-  font-size: 40px;
-  transition: 0.3s;
-  cursor: pointer;
-  z-index: 4;
-}
-
-#design {
-  background-color: white;
-  margin: auto;
-  padding: 15px 0 15px 0;
-  max-width: 900px;
-}
-
-.masonry-layout {
-  display: block;
-  margin: auto;
-  column-count: 3;
-  column-gap: 1.4em;
-}
-
-.masonry-layout .brick {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 1.4em;
-}
-
-.brick img {
-  transition: all 0.5s ease-in-out;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  box-sizing: border-box;
 }
 
 /* Contact section */
